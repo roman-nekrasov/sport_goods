@@ -1,0 +1,116 @@
+@import "../../App.scss";
+
+.user-header {
+    background-color: $BackgroundDark;
+
+    padding-top: 16px;
+    padding-bottom: 15px;
+    line-height: 16px;
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__contacts {
+        display: flex;
+        gap: 23px;
+
+        a {
+            @include titleAndLogo($fz12, $fw400, $colorWhite, 12px);
+        }
+    }
+
+    &__login {
+        color: $colorWhite;
+        a {
+            @include titleAndLogo($fz12, $fw400, $colorWhite, 12px);
+        }
+    }
+}
+.nav-header {
+    display: flex;
+    // height: 98px;
+    padding: 24px 0;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+        letter-spacing: -2px;
+        @include titleAndLogo($fz24, $fw500, $colorDark, 58px, $ffMontserrat);
+    }
+
+    &__menu {
+        display: flex;
+        gap: 30px;
+        padding-left: 130px;
+        padding-right: 102px;
+        a {
+            @include titleAndLogo($fz16, $fw400, $colorDark, 24px);
+        }
+    }
+
+    &__item {
+    }
+
+    &__link {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: rgb(98, 98, 98);
+            transition: all 0.3s ease 0s;
+            opacity: 0;
+        }
+        &:hover::before {
+            opacity: 1;
+        }
+        &:hover {
+            color: rgb(98, 98, 98);
+        }
+    }
+
+    &__icons {
+        display: flex;
+
+        a {
+            transition: all 0.3s ease 0s;
+        }
+        a:hover {
+            scale: 1.2;
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    &__search {
+        width: 282px;
+        height: 40px;
+        border-radius: 15px;
+        padding: 5px 30px;
+        font-size: 18px;
+        margin-right: 20px;
+        transition: all 0.2s ease 0s;
+        background: rgb(232, 232, 232) url("../../assets/img/header/search.svg")
+            5px center no-repeat;
+        &:focus {
+            transition: all 0.2s ease 0s;
+            box-shadow: 1px 1px 1px 1px $BackgroundDark;
+            outline: 1px solid $BackgroundDark;
+        }
+    }
+
+    &__items {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+}

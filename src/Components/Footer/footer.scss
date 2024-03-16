@@ -1,0 +1,27 @@
+@import "../../App.scss";
+@import "../../Variables.scss";
+
+.footer {
+    padding-top: 42px;
+    padding-bottom: 27px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            @include titleAndLogo($fz16, $fw400, $colorWhite, 24px);
+        }
+    }
+
+    &__menu {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__items {
+    }
+
+    &__copyright {
+        @include titleAndLogo($fz16, $fw400, $colorWhite, 24px);
+    }
+}

@@ -1,0 +1,59 @@
+$tablet: 991.98px;
+$mobile: 767.98px;
+$mobileSmall: 479.98px;
+
+/*     variables          */
+
+$ffInter: "Inter";
+$ffRoboto: "Roboto";
+$ffMontserrat: "Montserrat";
+$fw300: 300;
+$fw400: 400;
+$fw500: 500;
+$fw700: 700;
+$fw900: 900;
+$fz20: 20px;
+$fz40: 40px;
+$fz16: 16px;
+$fz12: 12px;
+$fz24: 24px;
+$fz26: 26px;
+$fz38: 38px;
+$fz64: 64px;
+$BackgroundDark: rgb(52, 52, 52);
+$BackgroundDarkest: rgb(0, 0, 0);
+$BackgroundGreySubmit: rgb(98, 98, 98);
+$BackgroundGreyInput: rgb(232, 232, 232);
+
+$colorGrey: rgb(98, 98, 98);
+$colorDark: rgb(52, 52, 52);
+$colorWhite: rgb(255, 255, 255);
+$colorGreen: rgb(74, 170, 78);
+
+@mixin titleAndLogo(
+    $fz: $fz16,
+    $fw: $fw400,
+    $color: $colorDark,
+    $lh: 0px,
+    $family: $ffRoboto
+) {
+    font-size: $fz;
+    font-weight: $fw;
+    color: $color;
+    line-height: $lh;
+    font-family: $family;
+}
+
+@mixin btn($bg: $BackgroundDarkest) {
+    background: $bg;
+    color: $colorWhite;
+    border-radius: 15px;
+    padding: 20px 35px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+@mixin hoverBtn($hbg: $BackgroundGreySubmit) {
+    background: $hbg;
+    transition: all 0.3s ease 0s;
+}

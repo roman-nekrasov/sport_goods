@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+@import url(https://fonts.googleapis.com/css?family=Inter:300,regular,900);
+@import "Variables";
+// @import "./Components/Header/header.scss";
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    font-family: $ffRoboto;
+    color: $colorDark;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#root {
+    height: 100%;
+}
+
+[class*="__container"] {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    box-sizing: content-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+}
+.page {
+    flex: 1 1 auto;
+}
+
+/*                media                      */
