@@ -1,0 +1,44 @@
+@import "../../../Variables.scss";
+
+.great-friends-page {
+    padding-top: 20px;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__content {
+        flex: 0 0 50%;
+        // max-width: 570px;
+    }
+
+    &__title {
+        @include titleAndLogo($fz38, $fw500, $colorDark, 50px);
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        @include titleAndLogo($fz16, $fw400, $colorGrey, 24px);
+        margin-bottom: 40px;
+        max-width: 422px;
+    }
+
+    &__link {
+        @include btn();
+    }
+
+    &__link:hover {
+        @include hoverBtn();
+    }
+    &__image {
+        width: 570px;
+        height: 381px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

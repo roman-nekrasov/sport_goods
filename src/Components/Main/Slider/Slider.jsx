@@ -1,8 +1,7 @@
 import { sliderImages } from "../../../consts/sliderImage";
 import { useState } from "react";
-// import arrowLeft from "../../../assets/img/main/arrowLeft.svg";
+import "./../../Main/Slider/slider.scss";
 
-// console.log(sliderImages);
 function Slider() {
     const [currentSlide, setCurrentSlide] = useState(0);
 

@@ -1,4 +1,5 @@
 import Slider from "../Slider/Slider";
+import "./home.scss";
 
 function Home() {
     return (

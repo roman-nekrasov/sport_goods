@@ -1,0 +1,52 @@
+@import "../../../Variables.scss";
+
+.promotions-page {
+   padding-top: 80px;
+   padding-bottom: 108px;
+   &__container {
+       display: flex;
+       flex-direction: column;
+   }
+
+   &__content {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   &__title {
+       @include titleAndLogo($fz38, $fw500, $colorDark, 50px);
+       margin-bottom: 12px;
+   }
+
+   &__text {
+       @include titleAndLogo($fz16, $fw400, $colorGrey, 24px);
+       margin-bottom: 34px;
+       width: 570px;
+       text-align: center;
+   }
+   &__form {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   &__input {
+       padding: 18px 13px 22px;
+       border: 1px solid rgb(196, 196, 196);
+       border-radius: 10px;
+       width: 401px;
+       transition: all 0.2s ease 0s;
+       &:focus {
+           transition: all 0.2s ease 0s;
+           box-shadow: 3px 4px 13px 5px $BackgroundDark;
+           outline: 1px solid $BackgroundDark;
+       }
+   }
+
+   &__btn {
+       margin-left: -15px;
+       @include btn($BackgroundGreySubmit);
+   }
+   &__btn:hover {
+       @include hoverBtn($BackgroundDarkest);
+   }
+}

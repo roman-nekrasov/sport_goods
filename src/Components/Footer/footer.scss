@@ -4,7 +4,7 @@
 .footer {
     padding-top: 42px;
     padding-bottom: 27px;
-    background: $BackgroundDarkest;
+    background: $BackgroundDark;
     &__container {
         display: flex;
         justify-content: space-between;
@@ -12,9 +12,9 @@
         a {
             @include titleAndLogo($fz16, $fw400, $colorWhite, 24px);
         }
-    }
-
-    &__menu {
+        a:hover {
+            text-decoration: underline;
+        }
     }
 
     &__items {

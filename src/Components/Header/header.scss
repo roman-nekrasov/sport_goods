@@ -34,7 +34,6 @@
 }
 .nav-header {
     display: flex;
-    // height: 98px;
     padding: 24px 0;
     align-items: center;
     justify-content: space-between;
@@ -52,9 +51,6 @@
         a {
             @include titleAndLogo($fz16, $fw400, $colorDark, 24px);
         }
-    }
-
-    &__item {
     }
 
     &__link {

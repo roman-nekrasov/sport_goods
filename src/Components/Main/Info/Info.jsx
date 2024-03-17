@@ -1,4 +1,4 @@
-// import slide1 from "../../assets/img/main/info/insta.svg";
+import "../Info/info.scss";
 
 function Info() {
     return (
@@ -26,28 +26,22 @@ function Info() {
                     </ul>
                 </div>
                 <div className="info-page__social social-info-page">
-                    <a href="" className="social-info-page__link-insta">
-                        {/* <img src="" alt="icon" /> */}
-                    </a>
-                    <a href="" className="social-info-page__link-viber">
-                        {/* <img src="" alt="icon" /> */}
-                    </a>
-                    <a href="" className="social-info-page__link-tel">
-                        {/* <img src="" alt="icon" /> */}
-                    </a>
+                    <a href="#" className="social-info-page__link-insta"></a>
+                    <a href="#" className="social-info-page__link-viber"></a>
+                    <a href="#" className="social-info-page__link-tel"></a>
                 </div>
 
                 <div className="info-page__clients clients-info-page">
                     <h3 className="clients-info-page__title">Покупцям</h3>
                     <ul className="clients-info-page__items">
                         <li className="clients-info-page__item">
-                            <a href="">Оплата і доставка</a>
+                            <a href="#">Оплата і доставка</a>
                         </li>
                         <li className="clients-info-page__item">
-                            <a href="">Повернення</a>
+                            <a href="#">Повернення</a>
                         </li>
                         <li className="clients-info-page__item">
-                            <a href="">Питання та відповіді</a>
+                            <a href="#">Питання та відповіді</a>
                         </li>
                     </ul>
                 </div>
@@ -60,13 +54,13 @@ function Info() {
                             <a href="Мої дані">Мої дані</a>
                         </li>
                         <li className="account-info-page__item">
-                            <a href="">Історія замовлень</a>
+                            <a href="#">Історія замовлень</a>
                         </li>
                         <li className="account-info-page__item">
-                            <a href="">Улюблені</a>
+                            <a href="#">Улюблені</a>
                         </li>
                         <li className="account-info-page__item">
-                            <a href="">Розсилки</a>
+                            <a href="#">Розсилки</a>
                         </li>
                     </ul>
                 </div>
@@ -74,16 +68,16 @@ function Info() {
                     <h3 className="about-info-page__title">Про компанію</h3>
                     <ul className="about-info-page__items">
                         <li className="about-info-page__item">
-                            <a href="">Про нас</a>
+                            <a href="#">Про нас</a>
                         </li>
                         <li className="about-info-page__item">
-                            <a href="">Новини</a>
+                            <a href="#">Новини</a>
                         </li>
                         <li className="about-info-page__item">
-                            <a href="">Стати партнером</a>
+                            <a href="#">Стати партнером</a>
                         </li>
                         <li className="about-info-page__item">
-                            <a href="">Угода користувача</a>
+                            <a href="#">Угода користувача</a>
                         </li>
                     </ul>
                 </div>

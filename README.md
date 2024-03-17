@@ -1,26 +1,28 @@
-Запуск проекта
--Установите зависимости, выполнив команду npm install.
--Запустите проект, выполнив команду npm run dev.
+Project Launch
 
-Основные компоненты
-1.Header: Компонент, отображающий верхнюю часть страницы, содержащий логотип,меню навигационное, поиск, товары которые понравились, корзиную
-2.Main: Лежат компоненты, такие как:
--Home
--GreatFriends
--Products
--Promotions
--Rewiews
--Info
-3.Footer: Компонент, отображающий основное содержимое страницы.
+Install dependencies by running the command npm install.
+Run the project by executing the command npm run dev.
+Main Components
 
-Стили
+1.Header: A component displaying the main top part of the page, containing a logo, navigation menu, search, favorite items, and a shopping cart.
+2.Main: Contains components such as:
+Home (main page and slider)
+GreatFriends
+Products (slider)
+Promotions
+Reviews (slider)
+Info
+3.Footer: A component displaying the main content of the page.
 
-1. Variables.scss:содержаться: миксины, переменные.
-2. App.scss: лежитат обнуляющие стили, а также основные стили для body, wrapper, container.
-3. Components/Main/main.scss: лежат все стили компонентов main.
+Styles
 
-Константы
-src/consts/лежит 3 константы для распаковки карточек слайдера
-1.products для component Products
-2.sliderImage для слайдера сomponent Home
-3.reviews для component Rewiews
+1.Variables.scss: Contains mixins and variables.
+2.App.scss: Contains reset styles and basic styles for body, wrapper, and container.
+3.Each component has its own styles in the Components folder.
+
+Constants
+src/consts/ contains 3 constants for unpacking slider cards:
+
+1.products for the Products component
+2.sliderImage for the Home component slider
+3.reviews for the Reviews component.

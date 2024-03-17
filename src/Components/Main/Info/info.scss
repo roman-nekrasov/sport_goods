@@ -1,0 +1,57 @@
+@import "../../../Variables.scss";
+
+.info-page {
+    padding-top: 46px;
+    padding-bottom: 52px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        h3 {
+            margin-bottom: 30px;
+            @include titleAndLogo($fz16, $fw400, $colorDark, 24px);
+        }
+        a {
+            @include titleAndLogo($fz16, $fw400, $colorGrey, 24px);
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        li {
+            @include titleAndLogo($fz16, $fw400, $colorGrey, 24px);
+        }
+    }
+}
+
+.social-info-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    a {
+        transition: all 0.3s ease 0s;
+    }
+    a:hover {
+        scale: 1.1;
+        transition: all 0.3s ease 0s;
+    }
+    &__link-insta {
+        width: 24px;
+        height: 24px;
+        background: url("../../../assets/img/main/info/insta.svg") 0 0 no-repeat;
+    }
+    &__link-viber {
+        background: url("../../../assets/img/main/info/viber.svg") 0 0 no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+    &__link-tel {
+        background: url("../../../assets/img/main/info/tel.svg") 0 0 no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+}

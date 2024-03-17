@@ -2,7 +2,6 @@ import "./header.scss";
 import heart from "../../assets/img/header/heart.svg";
 import bag from "../../assets/img/header/bag.svg";
 
-// import search from "../../assets/img/header/search.svg";
 const headerNavItems = ["новинки", "чоловіки", "жінки", "аксесуари", "акції"];
 function Header() {
     return (
@@ -14,7 +13,7 @@ function Header() {
                         <a href="#">Допомога</a>
                     </div>
                     <div className="user-header__login">
-                        <a href="">Увійти</a>/<a href="">Зареєструватися</a>
+                        <a href="#">Увійти</a>/<a href="#">Зареєструватися</a>
                     </div>
                 </div>
             </div>
@@ -36,10 +35,10 @@ function Header() {
                     <div className="nav-header__icons">
                         <input className="nav-header__search" type="text" />
                         <div className="nav-header__items">
-                            <a href="">
+                            <a href="#">
                                 <img src={heart} alt="icon-like" />
                             </a>
-                            <a href="">
+                            <a href="#">
                                 <img src={bag} alt="icon-cart" />
                             </a>
                         </div>

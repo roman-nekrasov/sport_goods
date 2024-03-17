@@ -1,4 +1,5 @@
 import friend from "../../../assets/img/main/friend.jpeg";
+import "../GreatFriends/greatFriends.scss";
 
 function GreatFriends() {
     return (

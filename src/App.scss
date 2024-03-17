@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:500);
 @import url(https://fonts.googleapis.com/css?family=Inter:300,regular,900);
 @import "Variables";
-// @import "./Components/Header/header.scss";
+
 *,
 *::before,
 *::after {
@@ -68,5 +68,3 @@ body {
 .page {
     flex: 1 1 auto;
 }
-
-/*                media                      */

@@ -1,9 +1,8 @@
-import "./main.scss";
 import Home from "./Home/Home";
 import GreatFriends from "./GreatFriends/GreatFriends";
 import Products from "./Products/Products";
 import Promotions from "./Promotions/Promotions";
-import Rewiews from "./Rewiews/Rewiews";
+import Rewiews from "./Reviews/Reviews";
 import Info from "./Info/Info";
 
 function Main() {

@@ -1,0 +1,59 @@
+@import "../../../Variables.scss";
+
+.home-page {
+    position: relative;
+
+    &__container {
+        position: relative;
+        z-index: 11;
+        height: 498px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    &__content {
+        width: 470px;
+        padding-top: 39px;
+        padding-bottom: 101px;
+    }
+
+    &__title {
+        @include titleAndLogo($fz64, $fw900, $colorWhite, 77px, $ffInter);
+    }
+    &__title:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        @include titleAndLogo($fz64, $fw300, $colorWhite, 77px, $ffInter);
+    }
+
+    &__sales {
+        text-align: center;
+    }
+
+    &__items {
+        dt {
+            position: relative;
+            padding: 15px 34px;
+            @include titleAndLogo($fz40, $fw300, $colorWhite, 48px, $ffInter);
+        }
+        dt::after {
+            content: "";
+            z-index: 10;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(255, 255, 255, 0.3);
+        }
+        dt:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        dd {
+            @include titleAndLogo($fz20, $fw400, $colorWhite, 20px, $ffInter);
+        }
+    }
+}

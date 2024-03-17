@@ -1,3 +1,5 @@
+import "../Promotions/promotion.scss";
+
 function Promotions() {
     return (
         <section className="page-promotions promotions-page">
