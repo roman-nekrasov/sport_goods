@@ -4,6 +4,7 @@
 .footer {
     padding-top: 42px;
     padding-bottom: 27px;
+    background: $BackgroundDarkest;
     &__container {
         display: flex;
         justify-content: space-between;
@@ -14,11 +15,11 @@
     }
 
     &__menu {
-        display: flex;
-        gap: 30px;
     }
 
     &__items {
+        display: flex;
+        gap: 30px;
     }
 
     &__copyright {

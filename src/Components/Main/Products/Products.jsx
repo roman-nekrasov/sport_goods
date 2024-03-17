@@ -1,25 +1,27 @@
 import { useState } from "react";
-import { products } from "../../../Consts/products";
+import { products } from "../../../consts/products";
+
+const slides = 3;
+const pagesCount = Math.ceil(products.length / slides);
 
 function Products() {
-    const [currentSlide, setCurrentSlide] = useState(0);
+    const [currentPage, setCurrentPage] = useState(0);
 
     const nextSlide = () => {
-        setCurrentSlide(
-            currentSlide === products.length - 1 ? 0 : currentSlide + 1
-        );
+        setCurrentPage(Math.min(currentPage + 1, pagesCount - 1));
     };
 
     const prevSlide = () => {
-        setCurrentSlide(
-            currentSlide === 0 ? products.length - 1 : currentSlide - 1
-        );
+        setCurrentPage();
+        setCurrentPage(Math.max(currentPage - 1, 0));
     };
     return (
         <section className="page__products products-page">
             <div className="products-page__container">
                 <div className="products-page__swipers-btns">
-                    <p className="products-page__fraction">1/3</p>
+                    <p className="products-page__fraction">
+                        {currentPage + 1}/{pagesCount}
+                    </p>
                     <button
                         className="products-page__slider-left"
                         onClick={prevSlide}
@@ -30,9 +32,13 @@ function Products() {
                     ></button>
                 </div>
                 <div className="products-page__slides">
-                    {products.map(
-                        ({ id, img, title, gender, value, price }) => (
-                            <div key={id} className="products-page__card">
+                    {products
+                        .slice(
+                            currentPage * slides,
+                            currentPage * slides + slides
+                        )
+                        .map(({ id, img, title, gender, value, price }) => (
+                            <div className="products-page__card" key={id}>
                                 <div className="products-page__img">
                                     <img src={img} alt="img" />
                                 </div>
@@ -46,8 +52,7 @@ function Products() {
                                 <p className="products-page__value">{value}</p>
                                 <p className="products-page__price">{price}</p>
                             </div>
-                        )
-                    )}
+                        ))}
                 </div>
             </div>
         </section>

@@ -1,4 +1,4 @@
-import { sliderImages } from "../../../Consts/sliderImage";
+import { sliderImages } from "../../../consts/sliderImage";
 import { useState } from "react";
 // import arrowLeft from "../../../assets/img/main/arrowLeft.svg";
 
