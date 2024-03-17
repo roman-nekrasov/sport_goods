@@ -1,5 +1,6 @@
 Project Launch
-
+git clone https://github.com/Vishenka93/igore.git
+cd igore
 Install dependencies by running the command npm install.
 Run the project by executing the command npm run dev.
 Main Components
